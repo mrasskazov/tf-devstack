@@ -76,7 +76,7 @@ function machines() {
     # pip3 is installed at /usr/local/bin which is not in sudoers secure_path by default
     # use it as "python3 -m pip" with sudo
     curl --retry 3 --retry-delay 10 https://bootstrap.pypa.io/pip/3.6/get-pip.py | sudo python3
-    curl --retry 3 --retry-delay 10 https://bootstrap.pypa.io/pip/2.7/get-pip.py | sudo python2 - 'pip==20.1'
+    curl --retry 3 --retry-delay 10 https://bootstrap.pypa.io/pip/2.7/get-pip.py | sudo python2 - 'pip==20.3.4'
 
     # Uninstall docker-compose and packages it uses to avoid
     # conflicts with other projects (like tf-dev-test, tf-dev-env)
